@@ -1,7 +1,8 @@
 const countdownEl = document.getElementById("countdown");
 const videoEl = document.getElementById("video");
+const countdownSection = document.getElementById("countdown-section");
+const showNowBtn = document.getElementById("showNowBtn");
 
-// Fecha objetivo: 16 mayo 2025, 13:00
 const targetDate = new Date("2025-05-16T13:00:00");
 
 function updateCountdown() {
@@ -9,9 +10,7 @@ function updateCountdown() {
   const diff = targetDate - now;
 
   if (diff <= 0) {
-    // Ya pasó la fecha, mostrar el video
-    countdownEl.style.display = "none";
-    videoEl.classList.remove("hidden");
+    showVideo();
     return;
   }
 
@@ -25,6 +24,14 @@ function updateCountdown() {
   `;
 }
 
-// Actualiza cada segundo
-setInterval(updateCountdown, 1000);
+function showVideo() {
+  countdownSection.classList.add("hidden");
+  videoEl.classList.remove("hidden");
+}
+
+// Botón para saltar la espera
+showNowBtn.addEventListener("click", showVideo);
+
+// Iniciar contador
 updateCountdown();
+setInterval(updateCountdown, 1000);
