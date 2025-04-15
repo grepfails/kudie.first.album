@@ -1,53 +1,67 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #0f0f0f;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
+  margin: 0;
+  padding: 10px;
+  background: url('./7949df1d-c859-482d-863d-1955e64b1d7c.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: #ff5639;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-shadow:
+    0 0 5px #ff2f91,
+    0 0 10px #ff2f91,
+    0 0 20px #ff2f91,
+    0 0 40px #ff2f91;
+}
+
+.countdown {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unit .number {
+  font-size: 3rem;
+}
+
+.unit .label {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.4rem;
   }
-  
-  .container {
-    padding: 2rem;
+
+  .unit .number {
+    font-size: 2.2rem;
   }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+
+  .unit .label {
+    font-size: 0.7rem;
   }
-  
-  #countdown {
-    font-size: 2rem;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    background-color: #ffffff;
-    color: #000000;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #ddd;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  iframe {
-    margin-top: 2rem;
-    max-width: 100%;
-    border-radius: 12px;
-  }
-  
+}
+
+.hidden {
+  display: none;
+}

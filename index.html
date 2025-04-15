@@ -7,20 +7,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Kudie - Estreno del Videoclip</h1>
-    
-    <div id="countdown-section">
-      <div id="countdown"></div>
-      <button id="showNowBtn">Ver ahora</button>
+  <div class="title">¿Que pasa el 23 de Mayo?</div>
+  <div class="countdown">
+    <div class="unit">
+      <div id="days" class="number">03</div>
+      <div class="label">DIAS</div>
     </div>
+    <div class="unit">
+      <div id="hours" class="number">03</div>
+      <div class="label">HORAS</div>
+    </div>
+    <div class="unit">
+      <div id="minutes" class="number">14</div>
+      <div class="label">MINUTOS</div>
+    </div>
+    <div class="unit">
+      <div id="seconds" class="number">57</div>
+      <div class="label">SEGUNDOS</div>
+    </div>
+  </div>
 
-    <div id="video" class="hidden">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ejiPvDiX-qI?si=krYu5pLBGjpdwI1X" 
-              title="Kudie Videoclip" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-      </iframe>
+    <div id="end-countdown-container" class="hidden">
+      <a href="https://www.youtube.com/@kudieeee" id="countdown-content">
+        <img src="./Screenshot_1.png"/>
+      </a>
+        <!-- <iframe id="kudieVideo" width="560" height="315" title="Kudie Videoclip" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe> -->
     </div>
   </div>
 
