@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 10px;
-  background: url('./7949df1d-c859-482d-863d-1955e64b1d7c.png') no-repeat center center fixed;
+  background: url('./a5970587-298f-4695-b16d-1f878e3853cb-rojo.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Arial', sans-serif;
   color: white;
@@ -14,16 +14,13 @@ body {
 }
 
 .title {
-  color: #ff5639;
+  font-family: serif;
+  color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 30px;
-  text-shadow:
-    0 0 5px #ff2f91,
-    0 0 10px #ff2f91,
-    0 0 20px #ff2f91,
-    0 0 40px #ff2f91;
+  text-shadow: 0 0 5px #ff2f2f, 0 0 10px #ff2f91, 0 0 20px #ff2f2f, 0 0 40px #ff2f91;
 }
 
 .countdown {
