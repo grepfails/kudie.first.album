@@ -2,7 +2,7 @@ const countdownEl = document.getElementById("countdown");
 const videoEl = document.getElementById("end-countdown-container");
 const countdownSection = document.getElementById("countdown-section");
 const title = document.getElementById('title');
-const targetDate = new Date("2025-05-23T00:00:00");
+const targetDate = new Date("2025-05-22T23:00:00");
 
 const dayEl = document.getElementById('days');
 const hourEl = document.getElementById('hours');
