@@ -62,3 +62,46 @@ body {
 .hidden {
   display: none;
 }
+
+.social-icons {
+  top: 20px;
+  gap: 20px;
+  z-index: 10;
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 20px;
+  font-size: 2rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icons a:hover {
+  color: #ff2f91;
+  transform: scale(1.2);
+}
+
+#ytb-img {
+  width: 50%;
+  cursor: pointer;
+}
+
+#button-t {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #eb5827;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #ffffff1c;
+}
+
+@media (max-width: 480px) {
+  #ytb-img, #button-t {
+    width: 70%; /* tamaño para móviles */
+  }
+}

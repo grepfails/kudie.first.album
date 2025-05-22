@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kudie - Estreno Videoclip</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
-  <div class="title">¿Que pasa el 23 de Mayo?</div>
-  <div class="countdown">
+  <div id="title" class="title">¿Que pasa el 23 de Mayo?</div>
+  <div id="countdown" class="countdown">
     <div class="unit">
       <div id="days" class="number">03</div>
       <div class="label">DIAS</div>
@@ -28,13 +32,15 @@
   </div>
 
     <div id="end-countdown-container" class="hidden">
-      <a href="https://www.youtube.com/@kudieeee" id="countdown-content">
-        <img src="./Screenshot_1.png"/>
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@kudieeee" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/kudieeeee" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@kudieeee" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <a id="button-t" href="https://www.youtube.com/watch?v=d8pzFQavsQw&list=PLo2HqAhFz-mpTtiFDnlVCZpzcd466WljY&index=1&ab_channel=Kudie" target="_blank">Escuchalo ya pinchando aqui !!</a>
+      <a href="https://www.youtube.com/watch?v=d8pzFQavsQw&list=PLo2HqAhFz-mpTtiFDnlVCZpzcd466WljY&index=1&ab_channel=Kudie" target="_blank" id="countdown-content">
+        <img id="ytb-img" src="./Screenshot_2.png"/>
       </a>
-        <!-- <iframe id="kudieVideo" width="560" height="315" title="Kudie Videoclip" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-        </iframe> -->
     </div>
   </div>
 

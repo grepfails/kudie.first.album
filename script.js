@@ -1,7 +1,8 @@
 const countdownEl = document.getElementById("countdown");
 const videoEl = document.getElementById("end-countdown-container");
 const countdownSection = document.getElementById("countdown-section");
-const targetDate = new Date("2025-05-24T00:00:00");
+const title = document.getElementById('title');
+const targetDate = new Date("2025-05-23T00:00:00");
 
 const dayEl = document.getElementById('days');
 const hourEl = document.getElementById('hours');
@@ -11,9 +12,9 @@ const secondEl = document.getElementById('seconds');
 function updateCountdown() {
     const now = new Date();
     const diff = targetDate - now;
-
-    if (diff <= 0) {
-        showVideo();
+    
+    if (diff <= 0) {        
+        showContent();
         return;
     }
 
@@ -29,14 +30,11 @@ function updateCountdown() {
 }
 
 function showContent() {
-    countdownSection.classList.add("hidden");
+    countdownEl.classList.add("hidden");
     videoEl.classList.remove("hidden");
-
-    const iframe = document.getElementById("kudieVideo");
-    iframe.src = "https://www.youtube.com/embed/ejiPvDiX-qI?si=krYu5pLBGjpdwI1X";
+    title.innerText = "¡Ya llegó el momento!";
 }
 
 // Iniciar contador
 updateCountdown();
 setInterval(updateCountdown, 1000);
-showContent();
